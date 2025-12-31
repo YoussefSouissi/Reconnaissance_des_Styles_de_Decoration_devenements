@@ -1,0 +1,27 @@
+{
+  "img_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "val_split": 0.2,
+  "seed": 42,
+  "class_names_raw": [
+    "boheme",
+    "industriel",
+    "minimaliste",
+    "moderne",
+    "royal",
+    "rustique",
+    "vintage"
+  ],
+  "class_names_en": [
+    "bohemian",
+    "industrial",
+    "minimalist",
+    "modern",
+    "royal",
+    "rustic",
+    "vintage"
+  ]
+}

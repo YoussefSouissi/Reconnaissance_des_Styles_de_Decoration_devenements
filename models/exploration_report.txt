@@ -1,0 +1,65 @@
+================================================================================
+📊 RAPPORT D'EXPLORATION DU DATASET
+================================================================================
+
+1. RÉSUMÉ GÉNÉRAL
+--------------------------------------------------------------------------------
+   • Nombre total de styles : 7
+   • Nombre total d'images : 41,332
+   • Moyenne d'images par style : 5905
+
+2. DÉTAILS PAR STYLE
+--------------------------------------------------------------------------------
+   • Bohemian        (boheme         )
+     - Images totales : 6,576
+     - Images valides : 6,576
+
+   • Industrial      (industriel     )
+     - Images totales : 4,185
+     - Images valides : 4,185
+
+   • Minimalist      (minimaliste    )
+     - Images totales : 5,034
+     - Images valides : 5,034
+
+   • Modern          (moderne        )
+     - Images totales : 6,289
+     - Images valides : 6,289
+
+   • Royal           (royal          )
+     - Images totales : 6,163
+     - Images valides : 6,163
+
+   • Rustic          (rustique       )
+     - Images totales : 6,596
+     - Images valides : 6,596
+
+   • Vintage         (vintage        )
+     - Images totales : 6,489
+     - Images valides : 6,489
+
+3. PROPRIÉTÉS DES IMAGES
+--------------------------------------------------------------------------------
+   • Largeur moyenne : 256 px
+   • Largeur min/max : 256 / 256 px
+   • Hauteur moyenne : 256 px
+   • Hauteur min/max : 256 / 256 px
+   • Ratio L/H moyen : 1.00
+   • Taille fichier moyenne : 12.6 KB
+
+   • Formats d'images :
+     - JPEG: 1400 (100.0%)
+
+4. RECOMMANDATIONS POUR LA PRÉPARATION DES DONNÉES
+--------------------------------------------------------------------------------
+   ⚠️  Dataset déséquilibré détecté.
+      - Considérer l'augmentation de données pour les styles minoritaires
+      - Utiliser class_weight dans le modèle pour compenser
+
+   ✅ Prochaines étapes :
+      1. Diviser le dataset en train (80%) et validation (20%)
+      2. Configurer l'augmentation de données
+      3. Préparer les générateurs de données
+      4. Construire le modèle MobileNetV2
+
+================================================================================
