@@ -23,37 +23,6 @@ https://www.kaggle.com/datasets/souissiyoussef/event-decoration-styles-dataset
 
 ## **Architecture du Système - Deux Composants Indépendants**
 
-Le système est composé de **deux parties distinctes et indépendantes** :
-
-### **Vue d'ensemble du flux**
-
-`┌─────────────────────────────────────────┐
-│  Client uploade une image               │
-└──────────────┬──────────────────────────┘
-               │
-    ┌──────────┴──────────┐
-    │                     │
-    ▼                     ▼
-┌─────────┐        ┌─────────────┐
-│ PARTIE 1│        │  PARTIE 2   │
-│ Détection│        │ Extraction  │
-│ de Style│        │ de Couleurs │
-│  (CNN)  │        │  (KMeans)   │
-└────┬────┘        └──────┬──────┘
-     │                    │
-     ▼                    ▼
-  "Bohème"         ["#F5E6D3", "#8B7355"...]
-  (92% confiance)  (5 couleurs dominantes)
-     │                    │
-     └────────┬───────────┘
-              │
-              ▼
-    ┌──────────────────┐
-    │ Réponse complète │
-    │   à l'utilisateur│
-    └──────────────────┘`
-
----
 
 # **PARTIE 1 : Détection de Style par Patterns Visuels**
 
